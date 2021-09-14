@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Cart</string>
+    <string name="my_cart">My Cart</string>
+    <string name="edt_search">Search</string>
+    <string name="total">Total</string>
+    <string name="quantity">Quantity</string>
+    <string name="sum_price">Sum Price</string>
+    <string name="search_icon">search_icon</string>
+</resources>

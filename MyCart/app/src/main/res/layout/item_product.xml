@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:layout_constraintDimensionRatio="H,1:1"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_product" />
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            >
+
+            <TextView
+                android:id="@+id/txtUnitPrice"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                android:paddingStart="6dp"
+                android:textColor="@color/colorTrendingEnd"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/btnAddToCart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cart5"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/info"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
